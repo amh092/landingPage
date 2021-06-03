@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;900&display=swap');
 
 *, *::before, *::after {
 
@@ -57,7 +57,7 @@ border: 0px;
         position: relative;
         min-width: 375px;
        
-        font-family: 'Red Hat Display', sans-serif;
+      
         display: flex;
         flex-flow: row wrap;
         justify-content: center;
@@ -106,6 +106,7 @@ height: 28px;
 }
    article {
        padding: 20px 0;
+       
    }
 
    article h1 {
@@ -113,12 +114,16 @@ height: 28px;
        font-size: 40px;
        line-height: 44px;
        white-space: pre-line;
+    
    }
 
    article h1 span {
        text-transform: lowercase;
    }
 
+   article p {
+    color:#87879D;
+   }
    
     
 
@@ -139,7 +144,8 @@ height: 28px;
        
         align-items: center;
         justify-content: center;
-        
+        padding: 32px 0;
+        margin: 32px 0;
     }
 
     .meetings-images img {
@@ -162,6 +168,7 @@ height: 28px;
    
     .smarter-meetings {
         padding: 32px 0 ;
+        margin: 32px;
     }
     
     .smarter-meetings p {
@@ -184,6 +191,7 @@ height: 28px;
         display: flex;
         flex-flow: row wrap;
         justify-content: center;
+        align-items: center;
     }
     
     footer .overlay {
@@ -195,17 +203,14 @@ height: 28px;
         height: 100%;
     }
     
-    footer h1 {
-        color: white;
-        z-index: 999999;
-       
-    }
 
     
 
     footer button {
         z-index: 9999999;
         justify-content: center;
+        padding: 16px 0 ;
+        margin: 0;
     }
 
     footer button:hover {
@@ -216,27 +221,51 @@ height: 28px;
 
 .number {
     position: relative;
-    border:  #87879D 1px solid;
-    border-radius: 50%;
-  display: flex;
-  align-content: center;
-  justify-content: center;
-  width: 56px;
-  height: 56px;
- 
-    color: red;
-}
-.number h1 {
-    position: absolute;
     
-    padding: 0;
-    margin: 0;
-    left: 30.93%;
-    right: 33.93%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+   justify-content: center;
+    height: 140px;
+    width: 56px;
+  color: #87879D;
+  padding: 32px 0 ;
  
 }
 
+.line-container {
+    width: 100%;
+    height: 84px;
+    display: flex;
+   position: relative;
+   justify-content: center;
+  
 
+}
+
+.line {
+width: 1px;
+height: 100%;
+background-color: #87879D;
+}
+.the-inside {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border: 1px solid #87879D;
+    height: 56px;
+    width: 56px;
+    border-radius: 50%;
+}
+.the-inside h1 {
+text-align: center;
+position: absolute;
+color: #87879D;
+font-size: 16px;
+font-weight: 900;
+}
 .text-center {
     text-align: center;
 }
@@ -249,6 +278,12 @@ height: 28px;
     ;
 }
 
+.number-2 .the-inside{
+    z-index: 999999999;
+    background-color: white;
+    
+
+}
 
 footer {
     background: url(/assets/mobile/image-footer.jpg);
@@ -257,10 +292,25 @@ footer {
     margin: 0;
     width: 100%;
     margin: 0;
-    align-self: center;
-    justify-self: stretch;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;    
     background-size: cover;
+    
 }
+footer h1 {
+    color: white;
+    z-index: 999999;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 36px;
+    text-align: center;
+    padding: 0 0 0 0  ;
+    margin: 64px 0 0 0 ;
+   
+}
+
 
 footer .overlay {
     position: absolute;
@@ -271,13 +321,14 @@ footer .overlay {
     height: 100%;
 }
 
-footer h1 {
-    color: white;
-   
-}
 footer p {
-    z-index: 999999;
-    font-weight: 50;
+    z-index: 1000;
+    font-weight: 500;
     font-size: 18px;
+    margin: 0;
     line-height: 26px;
+    color: white;
+    margin: 2px 0 0 0 ;
+    padding: 0;
+    white-space: pre-line;
 }
