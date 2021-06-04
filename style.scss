@@ -1,370 +1,356 @@
-@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;900&display=swap");
 
-*, *::before, *::after {
-    box-sizing: border-box;
-    font-family: 'Red Hat Display', sans-serif;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: "Red Hat Display", sans-serif;
 }
 
 button {
-    cursor: pointer;
+  cursor: pointer;
 }
 body {
-    min-width:1440px;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: flex-start;
-
+  min-width: 1440px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: flex-start;
 }
 .logo {
-    position: relative;
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    padding: 80px 0;
- 
- }
- .logo img {
-    width: 118.72px;
-    height: 28px;
- }
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 80px 0;
+  order: 1;
+}
+.logo img {
+  width: 118.72px;
+  height: 28px;
+}
 
 .hero {
-    display: flex;
-    flex-flow:  row wrap;;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero .left {
-
 }
 
 .hero .right {
-
 }
 .hero article {
-    
 }
 
 .hero .buttons {
-
 }
 
 .number {
-    position: relative;
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    justify-content: center;
-    height: 140px;
-    width: 56px;
-    color: #87879D;
-    padding: 32px 0 ;
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  height: 140px;
+  width: 56px;
+  color: #87879d;
+  padding: 32px 0;
 }
 
 .meetings-images {
-    display: flex;
-    position: relative;
-    flex-flow: row wrap;
-    width: 100%;
-   
-    align-items: center;
-    justify-content: center;
-    padding: 32px 0;
-    margin: 32px 0;
+  display: flex;
+  position: relative;
+  flex-flow: row wrap;
+  width: 100%;
+
+  align-items: center;
+  justify-content: center;
+  padding: 32px 0;
+  margin: 32px 0;
 }
 
 .smarter-meetings {
-    padding: 32px 0 ;
-    margin: 32px;
+  padding: 32px 0;
+  margin: 32px;
 }
 
-
-.number-2 .the-inside{
-    z-index: 999999999;
-    background-color: white;
+.number-2 .the-inside {
+  z-index: 999999999;
+  background-color: white;
 }
 footer {
-    background: url(/assets/mobile/image-footer.jpg);
-    position: relative;
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;    
-    background-size: cover;  
+  background: url(/assets/mobile/image-footer.jpg);
+  position: relative;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  background-size: cover;
 }
 footer h1 {
-    color: white;
-    z-index: 999999;
-    font-weight: 900;
-    font-size: 32px;
-    line-height: 36px;
-    text-align: center;
-    padding: 0 0 0 0  ;
-    margin: 64px 0 0 0 ;
+  color: white;
+  z-index: 999999;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 36px;
+  text-align: center;
+  padding: 0 0 0 0;
+  margin: 64px 0 0 0;
 }
 
 footer .overlay {
-    position: absolute;
-    background: hsl(192, 37, 48,.8);
-   
-    z-index: 1000;
-    width: 100%;
-    height: 100%;
+  position: absolute;
+  background: hsl(192, 37, 48, 0.8);
+
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
 }
 
 footer p {
-    z-index: 1000;
-    font-weight: 500;
-    font-size: 18px;
-    margin: 0;
-    line-height: 26px;
-    color: white;
-    margin: 2px 0 0 0 ;
-    padding: 0;
-    white-space: pre-line;
+  z-index: 1000;
+  font-weight: 500;
+  font-size: 18px;
+  margin: 0;
+  line-height: 26px;
+  color: white;
+  margin: 2px 0 0 0;
+  padding: 0;
+  white-space: pre-line;
 }
 /* buttons*/
 
-/* button 1 */ 
+/* button 1 */
 
 .button1 {
-    background: hsl(192, 37, 48) ;
-    border-radius: 29px;
-    height: 58px;
-    width: 193px;
-    color: #fafafa;
-    border: 0px;
+  background: hsl(192, 37, 48);
+  border-radius: 29px;
+  height: 58px;
+  width: 193px;
+  color: #fafafa;
+  border: 0px;
 }
 
 .button1 span {
-    color: hsl(192, 90, 77);
+  color: hsl(192, 90, 77);
 }
 
 .button1:hover {
-    background: #71C0D4;
+  background: #71c0d4;
 }
 
 /*button 2*/
 .button2 {
-    background: #855FB1;
-    border-radius: 29px;
-    height: 58px;
-    width: 193px;
-    color: #fafafa;
-    border: 0px;
- }
-    
+  background: #855fb1;
+  border-radius: 29px;
+  height: 58px;
+  width: 193px;
+  color: #fafafa;
+  border: 0px;
+}
+
 .button2 span {
-    background-color:  #D9B8FF;;
+  background-color: #d9b8ff;
 }
 
 /* buttons*/
+
+/* starting media query for mobiles 375px width */
 @media only screen and (max-width: 375px) {
-    
-body{
+  body {
     position: relative;
     min-width: 375px;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    align-items: flex-start;
-    }
+  }
 
-.logo {
+  .logo {
     position: relative;
     display: flex;
     flex-flow: row wrap;
     align-items: center;
     justify-content: center;
     width: 100%;
-    padding: 20px 0;
+    margin: 10px 0;
     order: 0;
-}
+  }
 
-.logo img {
+  .logo img {
     width: 118.72px;
     height: 28px;
-}
+  }
 
-.hero {
-    padding: 22px 0 ;
+  .hero {
+    padding: 22px 0;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
     min-width: 418px;
     height: 153px;
-    order: 1;
-}
+  }
 
-.hero .left { 
-   margin: 16px ;
-}
+  .hero .left {
+    margin: 16px;
+    width: 50%;
+  }
 
-.hero .right {
-   margin: 16px;
-}
+  .hero .right {
+    margin: 16px;
+    width: 50%;
+  }
 
-.hero img {
-    width:100%;
-}
+  .hero img {
+    width: 50%;
+  }
 
-article {
+  .hero article {
     padding: 20px 0;
-    
-}
+  }
 
-article h1 {
+  .hero article h1 {
     text-transform: capitalize;
     font-size: 40px;
     line-height: 44px;
     white-space: pre-line;
-}
+  }
 
-   article h1 span {
-       text-transform: lowercase;
-   }
+  .hero article h1 span {
+    text-transform: lowercase;
+  }
 
-   article p {
-    color:#87879D;
-   }
-   
-    
+  .hero article p {
+    color: #87879d;
+  }
 
-   .buttons {
-       display: flex;
-       flex-flow: row wrap;
-       align-items: center;
-       justify-content: center;
-       width: 100%;
-       padding: 20px 0 ;
-   }
-    
-    .meetings-images {
-        display: flex;
-        position: relative;
-        flex-flow: row wrap;
-        width: 100%;
-       
-        align-items: center;
-        justify-content: center;
-        padding: 32px 0;
-        margin: 32px 0;
-    }
-
-    .meetings-images img {
-        width: 151px;
-        height: 143px;
-        border-radius: 12px;
-        margin: 12px ;
-    
-    }
-    
-    .logo {
-        display: flex;
-        flex-flow: column wrap;
-    
-    }
-    button {
-        margin: 8px 0 ;
-    }
-
-   
-    .smarter-meetings {
-        padding: 32px 0 ;
-        margin: 32px;
-    }
-    
-    .smarter-meetings p {
-       color:#87879D;
-       font-weight: 500;
-       font-size: 16px;
-       line-height: 26px;
-    
-    }
-    footer {
-        background: url(/assets/mobile/image-footer.jpg);
-        position: relative;
-        padding: 0;
-        margin: 0;
-        width: 100%;
-        height: 428px;
-        background-size: cover;
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    footer .overlay {
-        position: absolute;
-        background: hsl(192, 37, 48,.8);
-        z-index: 1000;
-        width: 100%;
-        height: 100%;
-    }
-
-    footer button {
-        z-index: 9999999;
-        justify-content: center;
-        padding: 16px 0 ;
-        margin: 0;
-    }
-
-    footer button:hover {
-        background-color: #D9B8FF;
-    }
-}
-
-
-
-.line-container {
+  .hero .buttons {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
     width: 100%;
-    height: 84px;
+    padding: 20px 0;
+  }
+
+  .meetings-images {
     display: flex;
     position: relative;
-     justify-content: center;
-}
+    flex-flow: row wrap;
+    width: 100%;
 
-.line {
-    width: 1px;
-    height: 100%;
-    background-color: #87879D;
-}
-.the-inside {
+    align-items: center;
+    justify-content: center;
+    padding: 32px 0;
+    margin: 32px 0;
+  }
+
+  .meetings-images img {
+    width: 151px;
+    height: 143px;
+    border-radius: 12px;
+    margin: 12px;
+  }
+
+  .logo {
+    display: flex;
+    flex-flow: column wrap;
+  }
+  button {
+    margin: 8px 0;
+  }
+
+  .smarter-meetings {
+    padding: 32px 0;
+    margin: 32px;
+  }
+
+  .smarter-meetings p {
+    color: #87879d;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+  }
+  footer {
+    background: url(/assets/mobile/image-footer.jpg);
+    position: relative;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 428px;
+    background-size: cover;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
-    position: relative;
-    border: 1px solid #87879D;
-    height: 56px;
-    width: 56px;
-    border-radius: 50%;
+  }
+
+  footer .overlay {
+    position: absolute;
+    background: hsl(192, 37, 48, 0.8);
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+  }
+
+  footer button {
+    z-index: 9999999;
+    justify-content: center;
+    padding: 16px 0;
+    margin: 0;
+  }
+
+  footer button:hover {
+    background-color: #d9b8ff;
+  }
+}
+.line-container {
+  width: 100%;
+  height: 84px;
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+
+.line {
+  width: 1px;
+  height: 100%;
+  background-color: #87879d;
+}
+.the-inside {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border: 1px solid #87879d;
+  height: 56px;
+  width: 56px;
+  border-radius: 50%;
 }
 .the-inside h1 {
-    text-align: center;
-    position: absolute;
-    color: #87879D;
-    font-size: 16px;
-    font-weight: 900;
+  text-align: center;
+  position: absolute;
+  color: #87879d;
+  font-size: 16px;
+  font-weight: 900;
 }
 .text-center {
-    text-align: center;
+  text-align: center;
 }
 
 .text-uppercase {
-    text-transform: uppercase;
-    font-weight: 900;
-    font-size: 16px;
-    color: #4D96A9;
-    ;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 16px;
+  color: #4d96a9;
 }
