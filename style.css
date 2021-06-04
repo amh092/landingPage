@@ -13,7 +13,7 @@ body {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .logo {
@@ -36,6 +36,84 @@ body {
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
+}
+
+.number {
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  height: 140px;
+  width: 56px;
+  color: #87879D;
+  padding: 32px 0;
+}
+
+.meetings-images {
+  display: flex;
+  position: relative;
+  flex-flow: row wrap;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 0;
+  margin: 32px 0;
+}
+
+.smarter-meetings {
+  padding: 32px 0;
+  margin: 32px;
+}
+
+.number-2 .the-inside {
+  z-index: 999999999;
+  background-color: white;
+}
+
+footer {
+  background: url(/assets/mobile/image-footer.jpg);
+  position: relative;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  background-size: cover;
+}
+
+footer h1 {
+  color: white;
+  z-index: 999999;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 36px;
+  text-align: center;
+  padding: 0 0 0 0;
+  margin: 64px 0 0 0;
+}
+
+footer .overlay {
+  position: absolute;
+  background: rgba(77, 150, 168, 0.8);
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+}
+
+footer p {
+  z-index: 1000;
+  font-weight: 500;
+  font-size: 18px;
+  margin: 0;
+  line-height: 26px;
+  color: white;
+  margin: 2px 0 0 0;
+  padding: 0;
+  white-space: pre-line;
 }
 
 /* buttons*/
@@ -79,7 +157,7 @@ body {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
   }
 
   .logo {
@@ -90,6 +168,7 @@ body {
     justify-content: center;
     width: 100%;
     padding: 20px 0;
+    order: 0;
   }
 
   .logo img {
@@ -105,6 +184,7 @@ body {
     align-items: center;
     min-width: 418px;
     height: 153px;
+    order: 1;
   }
 
   .hero .left {
@@ -219,18 +299,6 @@ body {
     background-color: #D9B8FF;
   }
 }
-.number {
-  position: relative;
-  display: flex;
-  flex-flow: row wrap;
-  align-items: center;
-  justify-content: center;
-  height: 140px;
-  width: 56px;
-  color: #87879D;
-  padding: 32px 0;
-}
-
 .line-container {
   width: 100%;
   height: 84px;
@@ -274,56 +342,6 @@ body {
   font-weight: 900;
   font-size: 16px;
   color: #4D96A9;
-}
-
-.number-2 .the-inside {
-  z-index: 999999999;
-  background-color: white;
-}
-
-footer {
-  background: url(/assets/mobile/image-footer.jpg);
-  position: relative;
-  padding: 0;
-  margin: 0;
-  width: 100%;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-  background-size: cover;
-}
-
-footer h1 {
-  color: white;
-  z-index: 999999;
-  font-weight: 900;
-  font-size: 32px;
-  line-height: 36px;
-  text-align: center;
-  padding: 0 0 0 0;
-  margin: 64px 0 0 0;
-}
-
-footer .overlay {
-  position: absolute;
-  background: rgba(77, 150, 168, 0.8);
-  z-index: 1000;
-  width: 100%;
-  height: 100%;
-}
-
-footer p {
-  z-index: 1000;
-  font-weight: 500;
-  font-size: 18px;
-  margin: 0;
-  line-height: 26px;
-  color: white;
-  margin: 2px 0 0 0;
-  padding: 0;
-  white-space: pre-line;
 }
 
 /*# sourceMappingURL=style.css.map */
