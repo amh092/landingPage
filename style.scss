@@ -7,12 +7,58 @@
 }
 
 
-body {
-    min-width:1440px;
-}
+
 
 button {
     cursor: pointer;
+}
+body {
+    min-width:1440px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+.logo {
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 80px 0;
+    
+   
+   
+ }
+ .logo img {
+ width: 118.72px;
+ height: 28px;
+ 
+     }
+
+
+.hero {
+    display: flex;
+    flex-flow:  row wrap;;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero .left {
+
+}
+
+.hero .right {
+
+}
+.hero article {
+    
+}
+
+.hero .buttons {
+
 }
 
 
@@ -57,18 +103,13 @@ border: 0px;
 /* buttons*/
 @media only screen and (max-width: 375px) {
     
-    body{
-        position: relative;
-        min-width: 375px;
-       
-      
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-        align-items: center;
-       
-       
-       
+body{
+    position: relative;
+    min-width: 375px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
     }
 
 .logo {
@@ -79,14 +120,12 @@ border: 0px;
    justify-content: center;
    width: 100%;
    padding: 20px 0;
-  
-  
 }
+
 .logo img {
 width: 118.72px;
 height: 28px;
-
-    }
+}
 
 .hero {
     padding: 22px 0 ;
@@ -96,40 +135,30 @@ height: 28px;
     align-items: center;
     min-width: 418px;
     height: 153px;
-
 }
 
-.hero .left {
-
-   flex: 1;
+.hero .left { 
    margin: 16px ;
-
 }
-.hero .right {
-    flex: 1;
-   margin: 16px;
- 
-  
 
+.hero .right {
+   margin: 16px;
 }
 
 .hero img {
     width:100%;
-   
 }
 
-   article {
-       padding: 20px 0;
-       
-   }
+article {
+    padding: 20px 0;
+}
 
-   article h1 {
-       text-transform: capitalize;
-       font-size: 40px;
-       line-height: 44px;
-       white-space: pre-line;
-    
-   }
+article h1 {
+    text-transform: capitalize;
+    font-size: 40px;
+    line-height: 44px;
+    white-space: pre-line;
+}
 
    article h1 span {
        text-transform: lowercase;
@@ -199,7 +228,7 @@ height: 28px;
         margin: 0;
         width: 100%;
         height: 428px;
-        margin: 0;
+        
        
         background-size: cover;
         display: flex;
@@ -211,14 +240,10 @@ height: 28px;
     footer .overlay {
         position: absolute;
         background: hsl(192, 37, 48,.8);
-       
         z-index: 1000;
         width: 100%;
         height: 100%;
     }
-    
-
-    
 
     footer button {
         z-index: 9999999;
@@ -232,35 +257,30 @@ height: 28px;
     }
 }
 
-
 .number {
     position: relative;
-    
     display: flex;
     flex-flow: row wrap;
     align-items: center;
-   justify-content: center;
+    justify-content: center;
     height: 140px;
     width: 56px;
-  color: #87879D;
-  padding: 32px 0 ;
- 
+    color: #87879D;
+    padding: 32px 0 ;
 }
 
 .line-container {
     width: 100%;
     height: 84px;
     display: flex;
-   position: relative;
-   justify-content: center;
-  
-
+    position: relative;
+     justify-content: center;
 }
 
 .line {
-width: 1px;
-height: 100%;
-background-color: #87879D;
+    width: 1px;
+    height: 100%;
+    background-color: #87879D;
 }
 .the-inside {
     display: flex;
