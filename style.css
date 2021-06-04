@@ -15,7 +15,8 @@ body {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
+  margin: 0 auto;
 }
 
 .logo {
@@ -24,9 +25,9 @@ body {
   flex-flow: row wrap;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  padding: 80px 0;
-  order: 1;
+  width: 1504px;
+  padding: 40px 0;
+  order: 0;
 }
 
 .logo img {
@@ -37,8 +38,54 @@ body {
 .hero {
   display: flex;
   flex-flow: row wrap;
+  justify-content: stretch;
+  align-items: flex-start;
+  width: 1504px;
+  margin: 0 0 50px 0;
+}
+
+.hero .left {
+  order: 1;
+  flex: 1;
+}
+
+.hero .right {
+  flex: 1;
+  order: 3;
+}
+
+.hero article {
+  display: flex;
+  flex-flow: row wrap;
   justify-content: center;
-  align-items: center;
+  order: 2;
+  flex: 1;
+}
+
+.hero article h1 {
+  text-transform: capitalize;
+  font-size: 40px;
+  line-height: 44px;
+  white-space: pre-line;
+  width: 100%;
+}
+
+.hero article h1 span {
+  text-transform: lowercase;
+}
+
+.hero article p {
+  color: #87879d;
+  width: 100%;
+  line-height: 26px;
+  font-weight: 500;
+  font-size: 18px;
+  white-space: pre-line;
+}
+
+.hero article .buttons {
+  align-self: center;
+  justify-self: flex-end;
 }
 
 .number {
@@ -48,9 +95,10 @@ body {
   align-items: center;
   justify-content: center;
   height: 140px;
-  width: 56px;
+  width: 1440px;
   color: #87879d;
   padding: 32px 0;
+  margin: 50px 0 8px 0;
 }
 
 .meetings-images {
@@ -64,9 +112,33 @@ body {
   margin: 32px 0;
 }
 
+.meetings-images img {
+  width: 255px;
+  height: 242px;
+  margin: 0 30px 0px 0;
+  border-radius: 10px;
+}
+
 .smarter-meetings {
   padding: 32px 0;
   margin: 32px;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.smarter-meetings p {
+  color: #87879d;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  white-space: pre-line;
+  width: 100%;
+}
+
+.smarter-meetings h1 {
+  width: 100%;
 }
 
 .number-2 .the-inside {
@@ -76,27 +148,27 @@ body {
 
 footer {
   background: url(/assets/mobile/image-footer.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
   position: relative;
-  padding: 0;
-  margin: 0;
   width: 100%;
-  margin: 0;
+  min-height: 308px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  background-size: cover;
 }
 
 footer h1 {
   color: white;
-  z-index: 999999;
+  z-index: 9999599;
   font-weight: 900;
   font-size: 32px;
   line-height: 36px;
   text-align: center;
   padding: 0 0 0 0;
   margin: 64px 0 0 0;
+  align-self: flex-start;
 }
 
 footer .overlay {
@@ -117,6 +189,19 @@ footer p {
   margin: 2px 0 0 0;
   padding: 0;
   white-space: pre-line;
+  text-align: left;
+}
+
+footer button {
+  z-index: 99999999;
+}
+
+footer section {
+  display: flex;
+  flex-flow: row wrap;
+  width: 1110px;
+  height: 88px;
+  justify-content: space-evenly;
 }
 
 /* buttons*/
@@ -161,6 +246,7 @@ footer p {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+    align-items: center;
   }
 
   .logo {
@@ -182,53 +268,70 @@ footer p {
   .hero {
     padding: 22px 0;
     display: flex;
+    position: relative;
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
     min-width: 418px;
-    height: 153px;
   }
 
   .hero .left {
-    margin: 16px;
-    width: 50%;
+    flex: 1;
+    order: 0;
   }
 
   .hero .right {
-    margin: 16px;
-    width: 50%;
+    flex: 1;
+    order: 1;
   }
 
   .hero img {
-    width: 50%;
+    width: 199px;
+    height: 153px;
   }
 
   .hero article {
     padding: 20px 0;
-  }
-
-  .hero article h1 {
-    text-transform: capitalize;
-    font-size: 40px;
-    line-height: 44px;
-    white-space: pre-line;
-  }
-
-  .hero article h1 span {
-    text-transform: lowercase;
+    order: 2;
+    display: flex;
+    flex-flow: column wrap;
+    justify-items: center;
+    align-content: center;
   }
 
   .hero article p {
     color: #87879d;
+    width: 100%;
+    line-height: 26px;
+    font-weight: 500;
+    font-size: 16px;
+    white-space: pre-line;
   }
 
   .hero .buttons {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
     align-items: center;
     justify-content: center;
     width: 100%;
     padding: 20px 0;
+  }
+
+  .hero article p {
+    width: 100%;
+  }
+
+  .number {
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    height: 140px;
+    width: 1440px;
+    color: #87879d;
+    padding: 32px 0;
+    margin: 0px 0 8px 0;
   }
 
   .meetings-images {
@@ -268,10 +371,10 @@ footer p {
     font-weight: 500;
     font-size: 16px;
     line-height: 26px;
+    white-space: pre-line;
   }
 
   footer {
-    background: url(/assets/mobile/image-footer.jpg);
     position: relative;
     padding: 0;
     margin: 0;
@@ -279,9 +382,15 @@ footer p {
     height: 428px;
     background-size: cover;
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
     justify-content: center;
     align-items: center;
+  }
+
+  footer section {
+    display: flex;
+    flex-flow: column wrap;
+    justify-items: flex-start;
   }
 
   footer .overlay {
