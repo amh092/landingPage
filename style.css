@@ -37,20 +37,26 @@ body {
 
 .hero {
   display: flex;
-  flex-flow: row wrap;
-  justify-content: stretch;
-  align-items: flex-start;
-  width: 1504px;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
   margin: 0 0 50px 0;
 }
 
 .hero .left {
   order: 1;
-  flex: 1;
+}
+
+.hero .left img {
+  width: 480px;
+}
+
+.hero .right img {
+  width: 100%;
 }
 
 .hero .right {
-  flex: 1;
   order: 3;
 }
 
@@ -59,7 +65,6 @@ body {
   flex-flow: row wrap;
   justify-content: center;
   order: 2;
-  flex: 1;
 }
 
 .hero article h1 {
