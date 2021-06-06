@@ -17,6 +17,7 @@ body {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+  width: 100%;
  
 }
 .logo {
@@ -25,7 +26,7 @@ body {
   flex-flow: row wrap;
   align-items: center;
   justify-content: center;
-  width: 1504px;
+  width: 100%;
   padding: 40px 0;
   order: 0;
 }
@@ -37,18 +38,21 @@ body {
 .hero {
   display: flex;
   flex-flow: row wrap ;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
-  width: 100%;
+  width: 1504px;
   margin: 0 0 50px 0;
+height: 358px;
+  padding: 0;
 }
 
-.hero .left {
+.hero img:first-of-type {
 flex: 1;
   order: 1;
+  
 }
 
-.hero .right {
+.hero img:last-of-type {
   flex: 1;
   order: 2;
 
@@ -56,21 +60,29 @@ flex: 1;
 
 .hero  img {
 width: 100%;
+padding: 0;
+margin: 0;
 }
 
 .hero article {
   display: flex;
   flex-flow: row wrap;
-justify-content: center;
+justify-items: center;
+align-content: center;
   order: 1;
-  flex: 1;
+  flex: 2;
+  position: relative;
+  margin: 0 88px;
 }
 .hero article h1 {
     text-transform: capitalize;
-    font-size: 40px;
-    line-height: 44px;
+    font-size: 64px;
+    line-height: 64px;
     white-space: pre-line;
     width: 100%;
+    margin: 0px 0 20px 0 ;
+    color: #28283D
+    ;
   }
 
   .hero article h1 span {
@@ -79,15 +91,17 @@ justify-content: center;
 
   .hero article p {
     color: #87879d;
-    width: 100%;
+    width: 540px;
     line-height: 26px;
     font-weight: 500;
     font-size: 18px;
     white-space: pre-line;
+    margin: 12px 0 32px 0 ;
   }
 .hero article .buttons {
-  align-self: center;
+  align-self: flex-end;
   justify-self: flex-end;
+  width: 100%;
 }
 
 .number {
@@ -97,7 +111,7 @@ justify-content: center;
   align-items: center;
   justify-content: center;
   height: 140px;
-  width: 1440px;
+  width: 100%;
   color: #87879d;
   padding: 32px 0;
   margin: 50px 0 8px 0 ;
@@ -150,11 +164,12 @@ footer {
   background-repeat: no-repeat;
   position: relative;
   width: 100%;
-  min-height: 308px;
+  height: 308px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  align-self: flex-end;
  
 }
 footer h1 {
@@ -277,13 +292,12 @@ footer section {
     min-width: 418px;
   }
 
-  .hero .left {
+  .hero img:first-of-type {
     flex: 1;
     order: 0;
-    
   }
 
-  .hero .right {
+  .hero img:last-of-type {
     flex: 1;
     order: 1;
     
@@ -392,8 +406,12 @@ footer section {
   }
   footer section {
       display: flex;
-      flex-flow: column wrap;
-      justify-items: flex-start;
+      flex-flow: row wrap;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      
+      
   }
 
   footer .overlay {
